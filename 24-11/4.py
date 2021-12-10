@@ -4,7 +4,7 @@ while True:
         try:
             weight = input('Input max inventory weight: ')
             weight = float(weight)
-            if (weight<0):
+            if (weight < 0):
                 raise ValueError
             break
         except ValueError:
@@ -22,22 +22,22 @@ while True:
             print('incorrect command')  
 
 
-    if (command=='a'):
+    if (command == 'a'):
         name=input('Input item name: ')
         while True:
             try:
-                itemWeight = input('Input item weight: ')
-                itemWeight = float(itemWeight)
-                if (itemWeight<0):
+                item_weight = input('Input item weight: ')
+                item_weight = float(item_weight)
+                if (item_weight < 0):
                     raise ValueError
                 break
             except ValueError:
                 print('weight must be non-negative digit!')    
-        if ( (sum(inventory.values()))+itemWeight ) <= weight:
-            inventory[name]=itemWeight   
+        if ( (sum(inventory.values())) + item_weight ) <= weight:
+            inventory[name] = item_weight   
         else:
             print('Owerweight!')
-    elif (command=='l'):
+    elif (command == 'l'):
         print(inventory)
     else:
         break

@@ -1,18 +1,22 @@
 def sumAll(*args):
+    '''Return sum of all arguments. 
+    Arguments must supports operation "+" 
+    and be same types
+    '''
     try:
-        sum=None
+        sum = None
         for arg in args:
-            if sum==None:
-                sum=arg
+            if sum == None:
+                sum = arg
             else:
-                sum+=arg
+                sum += arg
         if sum is None:
-            sum=0        
+            sum = 0        
         return sum
     except TypeError:
         print("Error! Invalid argumets types")
         return None    
 
-sum=sumAll('ASFAS',1)
+sum=sumAll('ASFAS', 1)
 if sum is not None:
-    print('Sum of arguments: '+str(sum))              
+    print('Sum of arguments: ' + str(sum)) 

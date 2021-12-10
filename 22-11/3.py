@@ -26,14 +26,14 @@ while True:
     except ValueError:
         print('c must be digit!')
 
-d=b*b - 4*a*c
+d = b*b - 4*a*c
 
-if (d>0):
-    x1=( -b+math.sqrt(d) ) / (2*a)
-    x2=( -b-math.sqrt(d) ) / (2*a)
-    print('x1: '+str(x1)+'\nx2:' + str(x2))
-elif (d==0):
-    x=-b/( 2*a )
+if (d > 0):
+    x1 = (-b + math.sqrt(d)) / (2*a)
+    x2 = (-b - math.sqrt(d)) / (2*a)
+    print('x1: ' + str(x1) + '\nx2:' + str(x2))
+elif (d == 0):
+    x = -b / (2*a)
     print('x: ' + str(x))
 else:
     print('No roots')

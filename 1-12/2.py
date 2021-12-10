@@ -1,15 +1,15 @@
-with open('Input.txt','r') as inputFile:
-    cMax=int(inputFile.readline())//2
-    hMax=int(inputFile.readline())//6
-    oMax=int(inputFile.readline())
+with open('Input.txt','r') as input_file:
+    c_max=int(input_file.readline()) // 2
+    h_max=int(input_file.readline()) // 6
+    o_max=int(input_file.readline())
 
-    moleculeMax=cMax
-    if (moleculeMax>hMax):
-        moleculeMax=hMax
-    if (moleculeMax>oMax):
-        moleculeMax=oMax
+    molecule_max = c_max
+    if (molecule_max > h_max):
+        molecule_max = h_max
+    if (molecule_max > o_max):
+        molecule_max = o_max
 
-    print('Maximum molecules count:'+str(moleculeMax))   
+    print('Maximum molecules count:' + str(molecule_max))   
 
-with open('Output.txt','w') as outputFile:
-    outputFile.write(str(moleculeMax))   
+with open('Output.txt','w') as output_file:
+    output_file.write(str(molecule_max))   

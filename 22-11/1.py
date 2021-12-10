@@ -11,7 +11,7 @@ while True:
     try:
         dis = input('Input distance: ')
         dis = float(dis)
-        if (dis<0):
+        if (dis < 0):
             raise ValueError
         break
     except ValueError:
@@ -20,13 +20,13 @@ while True:
 x=0;
 y=0;
 
-if (dir=='r'):
-    x+=dis
-elif (dir=='l'):
-    x-=dis
-elif (dir=='f'):
-    y+=dis
+if (dir ==' r'):
+    x += dis
+elif (dir == 'l'):
+    x -= dis
+elif (dir == 'f'):
+    y += dis
 else:
-    y-=dis
+    y -= dis
 
-print('Current location, x: '+str(x)+', y: '+str(y) )    
+print('Current location, x: ' + str(x) + ', y: ' + str(y))    
