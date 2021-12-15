@@ -53,9 +53,6 @@ class Student(Human):
     def study(self):
         print(self.name + ' is studing...')
 
-    def __cmp__(self, student):
-        return self.hw_count - student.hw_count
-
     def __eq__(self, student):
         return self.hw_count == student.hw_count
 
@@ -79,5 +76,3 @@ stud1 = Student('Zhenya', 'Human', 'Male', 65, 'Blond', 'Brown', 'Student', 10)
 stud2 = Student('Matvey', 'Human', 'Male', 75, 'Brown', 'Blue', 'Programmer', 12)
 
 print(stud1 == stud2)
-print(stud1 > stud2)
-print(stud1 < stud2)
